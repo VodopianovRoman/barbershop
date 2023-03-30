@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center text-white">BARBERSHOP NONAME</h1>
+                    <a href="#footer" class="btn btn-bsh btn-lg text-uppercase">Замовити</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center text-uppercase color-1 mb-5"><strong>Barbershop No_Name</strong></h3>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 col-sm-12">
+                    <p class="text-center color2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+                        facere facilis incidunt nemo omnis optio quibusdam quos suscipit totam. Ad corporis dolor
+                        doloribus error esse, est incidunt magni neque nobis, nostrum officiis, quae quidem totam velit
+                        voluptas. Accusantium aperiam, assumenda atque consequuntur cumque debitis deserunt dolor
+                        dolorem doloribus eius fugiat hic illum ipsam iusto molestiae necessitatibus nesciunt non quia
+                        quod rem sint ut voluptas. Aspernatur cumque dolorem doloremque eaque earum error, esse
+                        excepturi fugit ipsa laboriosam officia officiis pariatur placeat quae quidem quos rerum sequi,
+                        voluptatem. A accusantium, culpa dolores excepturi in ipsa laborum molestias natus unde vel,
+                        velit voluptatem!</p>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-barbers">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center text-uppercase color1 mb-5"><strong>Our barbers</strong></h3>
+                </div>
+{#                <div class="col-lg-3 col-md-6 col-sm-12">#}
+{#                    <div class="barber-container">#}
+{#                        <div class="barber-img">#}
+{#                            <img src="" alt="">#}
+{#                        </div>#}
+{#                        <div class="barber-name">#}
+{#                            <p></p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+            </div>
+            <div class="row">
+                {% for barber_foto in barbers_foto %}
+                    {% include 'barbers/barbers.html' %}
+                {% endfor %}
+{#                {{ barbers_foto }}#}
+{#                {% include 'barbers/barbers.html' %}#}
+            </div>
+        </div>
+    </section>
+
+    <section class="price">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center text-uppercase color2 mb-5"><strong>Price</strong></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8 col-sm-12">
+
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center text-uppercase color1 mb-5"><strong>Contact</strong></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet exercitationem expedita explicabo
+                        laboriosam officiis quisquam temporibus. Architecto autem cupiditate tempore. Architecto at
+                        blanditiis corporis harum illo inventore itaque quis tempore velit voluptate. Amet architecto
+                        cumque debitis delectus dolore, eligendi enim exercitationem molestiae porro, possimus quia
+                        recusandae repudiandae saepe tempora vel!</h4>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <h4>Буде карта</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
